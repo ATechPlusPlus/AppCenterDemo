@@ -21,6 +21,9 @@ namespace AppCenterDemo
                      "uwp={Your UWP App secret here};" +
                      "ios=7de8d37b-3727-4770-a7f7-f3ec332cebcf",
                      typeof(Analytics), typeof(Crashes));
+
+            Analytics.TrackEvent("application Started");
+         
         }
 
         protected override void OnSleep()
